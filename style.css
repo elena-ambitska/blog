@@ -1,0 +1,407 @@
+* {
+    box-sizing: border-box;
+}
+
+.col-md-1 {
+    grid-column: span 1;
+}
+
+.col-md-2 {
+    grid-column: span 2;
+}
+
+.col-md-3 {
+    grid: 0 0 25%;
+    max-width: 25%;
+}
+
+.col-md-4 {
+    grid-column: span 4;
+}
+
+.col-md-5 {
+    grid-column: span 5;
+}
+
+.col-md-6 {
+    grid-column: span 6;
+}
+
+.col-md-7 {
+    grid: 0 0 58.33333%;
+    max-width: 58.33333%;
+}
+
+.col-md-8 {
+    grid-column: span 8
+}
+
+.col-md-9 {
+    grid: 0 0 75%;
+    max-width: 75%;
+}
+
+.col-md-10 {
+    grid-column: span 10;
+}
+
+.col-md-11 {
+    grid-column: span 11;
+}
+
+.col-md-12 {
+    grid-column: span 12
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: grid;
+
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+header {
+
+    background: linear-gradient(359.72deg, rgba(72, 43, 231, 0.73) 0.25%, rgba(0, 0, 0, 0.23) 99.77%), url(img/HeroHeader@1x.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+
+}
+
+.main-menu {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    align-self: center;
+    margin-top: 62.8px
+}
+
+.main-menu a {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: white;
+
+}
+
+
+.main-menu li {
+    border: 1px solid transparent;
+    padding: 7px 18px;
+    border-radius: 100px;
+}
+
+.main-menu li:hover {
+    border: 1px solid white;
+    background-color: white;
+
+}
+
+.main-menu li:hover a {
+    color: #482BE7;
+}
+
+.banner h1 {
+    font-family: George;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 84px;
+    line-height: 85px;
+    color: white;
+    letter-spacing: -1px;
+    margin-top: 51.22px;
+    margin-bottom: 27.7px;
+}
+
+.banner p {
+    color: white;
+    font-family: Gill Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 28px;
+}
+
+.banner button {
+    width: 169.76px;
+    height: 59.36px;
+    border: 2px solid;
+    background-color: transparent;
+    border-radius: 100px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    color: white;
+    margin-right: 20.97px;
+    margin-top: 82.12px;
+    margin-bottom: 177.18px;
+}
+
+.banner button:hover {
+    color: #482BE7;
+    background-color: white;
+}
+
+.icon {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-self: center;
+}
+
+.icon li {
+    padding-top: 30px;
+
+    height: 34px;
+    width: auto;
+
+}
+
+[class*=fa] {
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 34px;
+    width: 50px;
+    display: block;
+    background-position: center;
+}
+
+.fa-code {
+    background-image: url(img/icons/fa-code.svg);
+
+
+}
+
+.fa-heart {
+    background-image: url(img/icons/fa-heart.svg);
+
+}
+
+.fa-star {
+    background-image: url(img/icons/fa-star-o.svg);
+
+}
+
+.categorias h2 {
+    font-family: George;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 52px;
+    text-align: center;
+    letter-spacing: -0.4px;
+    color: #1E0E62;
+    padding-top: 41px;
+}
+
+.categorias p {
+    font-family: Gill Sans;
+    font-size: 24px;
+    line-height: 32px;
+    color: #8C8C8C;
+    text-align: center;
+    opacity: 0.7;
+    padding-bottom: 65px;
+}
+
+.categorias h3 {
+    font-family: George;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 52px;
+    padding-bottom: 40px;
+    text-align: center;
+    letter-spacing: -0.4px;
+    color: #1E0E62;
+}
+
+[class*=-img] {
+
+    height: 192px;
+    width: 100%;
+    display: block;
+    background-position: center;
+    border-radius: 16px;
+}
+
+.backend-img {
+    background: linear-gradient(0deg, rgba(47, 24, 147, 0.36), rgba(47, 24, 147, 0.36)), url(img/list/Background\ \(1\).png), #482BE7;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.frontend-img {
+    background: linear-gradient(0deg, rgba(47, 24, 147, 0.36), rgba(47, 24, 147, 0.36)), url(img/list/Background\ \(2\).png), #482BE7;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.marketing-img {
+    background: linear-gradient(0deg, rgba(47, 24, 147, 0.36), rgba(47, 24, 147, 0.36)), url(img/list/Background\ \(3\).png), #482BE7;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.server-img {
+    background: linear-gradient(0deg, rgba(47, 24, 147, 0.36), rgba(47, 24, 147, 0.36)), url(img/list/Background\ \(4\).png), #482BE7;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.categorias a {
+    font-family: George;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 56px;
+    color: #FFFFFF;
+
+
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    margin-right: 27.31px;
+}
+
+.sign-up h4 {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 52px;
+    letter-spacing: -0.4px;
+    color: #1E0E62;
+}
+
+.sign-up p {
+    text-align: left;
+}
+
+.sign-up button {
+    width: 123px;
+    height: 60px;
+    border: 1px solid grey;
+    border-radius: 50px;
+    background-color: transparent;
+    color: #1E0E62;
+}
+
+.sign-up {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.avatar {
+    padding: 20px;
+}
+
+.post {
+    background-image: url(img/blog/PostCard-06.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+}
+
+.text {
+    font-family: George;
+    font-weight: 600;
+    font-size: 46px;
+    line-height: 50px;
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+.post p {
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 25px;
+    color: #FFFFFF;
+    padding: 20px;
+
+}
+
+.like {
+    background-image: url(img/blog/Like.svg);
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+}
+
+.share-like button {
+    font-size: 15px;
+    background: transparent;
+    color: white;
+    border: transparent;
+    padding-left: 50px;
+    padding-top: 18px;
+}
+
+.commit {
+    background-image: url(img/blog/Like\ Copy.svg);
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+}
+
+.share {
+    background-image: url(img/blog/Like\ Copy\ 2.svg);
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+}
+
+.posts,
+.lists {
+    grid-gap: 50px;
+}
+
+.posts {
+    margin-bottom: 100px;
+}
+
+@media(max-width:768px) {
+    .col-xs-hide {
+        display: none;
+    }
+
+    .col-xs-12 {
+        grid-column: span 12;
+    }
+
+    .col-xs-6 {
+        grid-column: span 6;
+    }
+
+    .posts,
+    .lists {
+        grid-gap: 20px 0;
+    }
+
+    .banner h1 {
+        font-size: 36px;
+        line-height: 36px;
+    }
+
+    .main-menu li {
+        grid-column: span 12;
+    }
+}
