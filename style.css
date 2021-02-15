@@ -244,6 +244,10 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.lists li a:hover{
+background:linear-gradient(0deg, rgba(47, 24, 147, 0.36),rgba(47, 24, 147, 0.36));
+color: black;
+}
 
 .frontend-img {
     background: linear-gradient(0deg, rgba(47, 24, 147, 0.36), rgba(47, 24, 147, 0.36)), url(img/list/Background\ \(2\).png), #482BE7;
@@ -427,3 +431,5 @@ header {
         width: 100%;
     }
 }
+
+
